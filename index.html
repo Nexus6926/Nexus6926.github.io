@@ -11,15 +11,27 @@
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background: url('backgroung.jpg') center/cover fixed; /* Add background image */
-      background-color: rgba(136, 136, 136, 0.7); /* Set a translucent white background color */
+      position: relative; /* Add position relative to the body */
     }
-
+    
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url('back.jpg') center/cover fixed; /* Set the background image */
+      opacity: 0.99; /* Adjust the opacity as needed */
+    }
+    
     .center-block {
       text-align: center;
       padding: 20px;
       border-radius: 8px;
+      position: relative; /* Add position relative to the center-block */
     }
+    
 
     .profile-photo {
       width: 150px;
@@ -42,14 +54,14 @@
     <div class="profile-photo">
       <img src="profile_pic.jpg" alt="AB">
     </div>
-    <h1>Aryan Bhujbal</h1>
-    <h4><a href="https://github.com/Nexus6926/" style="color:black;">@Nexus</a></h4>
-    <p>Security researcher | CTF Player | Bug Hunter | Pentester </p>
+    <h1 style="color:rgb(255, 255, 255);">Aryan Bhujbal</h1>
+    <h4><a href="https://github.com/Nexus6926/" style="color:rgb(255, 255, 255);">@Nexus</a></h4>
+    <p style="color:rgb(255, 255, 255);">Security researcher | CTF Player | Bug Hunter | Pentester </p>
     <div class="e">
-      <p><a href="https://twitter.com/Nexus2504" style="color:black;">Twitter | </a>
-        <a href="https://s.team/p/gmpq-fnph/HGNPVGWH" style="color:black;">Steam | </a>
-        <a href="https://hackerone.com/nexus7" style="color:black;">Hackerone |</a>
-        <a href="https://bugcrowd.com/nexus6926" style="color:black;">Bugcrowd</a>
+      <p><a href="https://twitter.com/Nexus2504" style="color:rgb(255, 255, 255);">Twitter | </a>
+        <a href="https://s.team/p/gmpq-fnph/HGNPVGWH" style="color:rgb(255, 255, 255);">Steam | </a>
+        <a href="https://hackerone.com/nexus7" style="color:rgb(255, 255, 255);">Hackerone |</a>
+        <a href="https://bugcrowd.com/nexus6926" style="color:rgb(255, 255, 255);">Bugcrowd</a>
       </p>
     </div>
   </div>
