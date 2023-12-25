@@ -9,8 +9,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh; /* Make sure the body takes up the full height of the viewport */
+      height: 100vh;
       margin: 0;
+      background: url('backgroung.jpg') center/cover fixed; /* Add background image */
+      background-color: rgba(136, 136, 136, 0.7); /* Set a translucent white background color */
     }
 
     .center-block {
@@ -20,18 +22,18 @@
     }
 
     .profile-photo {
-      width: 150px; /* Adjust the width and height as needed */
+      width: 150px;
       height: 150px;
-      border-radius: 50%; /* Create a circular border */
-      overflow: hidden; /* Ensure the photo stays within the circular border */
-      margin: 0 auto 20px; /* Center the image horizontally and add spacing below the photo */
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px;
     }
 
     .profile-photo img {
       display: block;
-      margin: 0 auto; /* Center the image horizontally */
-      width: 150%; /* Make sure the image covers the entire container */
-      height: 100%; /* Maintain the aspect ratio */
+      margin: 0 auto;
+      width: 150%;
+      height: 100%;
     }
   </style>
 </head>
